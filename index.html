@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="60">
+<meta name="keywords" content="html,css,js">
+<meta name="author" content="Rebeca Miguel">
+<meta name="description" content="Alumnos">
+<title>Alumnos</title>
+<link rel="icon" href="img/aa.ico">
+<link rel="stylesheet" type="text/css" href="grid2.css"> 
+<link rel="stylesheet" href="trap//css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
+<script src="https://kit.fontawesome.com/a89cf62924.js" crossorigin="anonymous"></script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+  <h2>ESCUELA</h2>
+</div>
+
+<div class="row">
+<div class="leftcolumn">
+<div class="card">
+    <h2>PREGUNTAS</h2>
+    <br>
+    <br>
+        <form method="POST" name="f1" action="">
+        <b>1.-POR DINERO YO...</b><br><br>
+		<input type="radio" name="dinero" value="Haría lo que fuera por conseguirlo ">
+		Haría lo que fuera por conseguirlo <br>
+		<br><input type="radio" name="dinero" value="Estudiaría y trabajaría para obtenerlo ">
+		Estudiaría y trabajaría para obtenerlo  <br>
+		<br><input type="radio" name="dinero" value="Robaría y mentiría cuando hiciera falta ">
+        Robaría y mentiría cuando hiciera falta <br>
+        <br>
+    <br>
+
+		<b>2.-SENTIRTE PODEROSO E INFLUYENTE PARA TI ES…</b><br><br>
+		<br><input type="radio" name="poder" value=" Muy importante pero debo usarlo solo para hacer el bien">
+		Muy importante pero debo usarlo solo para hacer el bien<br>
+		<br><input type="radio" name="poder" value="Demasiado importante porque así puedo hacer lo que yo quiera">
+		Demasiado importante porque así puedo hacer lo que yo quiera<br>
+		<br><input type="radio" name="poder" value=" Es importante pero hay que usarlo correctamente sin volverse corrupto y orgulloso ">
+        Es importante pero hay que usarlo correctamente sin volverse corrupto y orgulloso <br>
+        <br>
+    <br>
+
+		<b>3.-LAS NARCO SERIES…</b><br><br>
+		<br><input type="radio" name="series" value=" Me encantan son mi forma habitual de entretenimiento ">
+		Me encantan son mi forma habitual de entretenimiento <br>
+		<br><input type="radio" name="series" value="No me gustan para nada porque son muy violentas">
+		No me gustan para nada porque son muy violentas<br>
+		<br><input type="radio" name="series" value=" Las veo en algunas ocasiones pero yo no imitaría a los personajes ">
+        Las veo en algunas ocasiones pero yo no imitaría a los personajes <br>
+        <br>
+    <br>
+
+		<b>4.-LAS DROGAS…</b><br><br>
+		<br><input type="radio" name="droga" value=" Son malas para la salud y causan adicción nunca las he usado y no lo haría ">
+		Son malas para la salud y causan adicción nunca las he usado y no lo haría <br>
+		<br><input type="radio" name="droga" value="En ocasiones me gusta usarlas pero solo lo hago por diversión para pasarla bien">
+		En ocasiones me gusta usarlas pero solo lo hago por diversión para pasarla bien<br>
+		<br><input type="radio" name="droga" value=" Me da miedo probarlas pero siento curiosidad ">
+        Me da miedo probarlas pero siento curiosidad <br>
+        <br>
+    <br>
+
+		<b>5.-CUANDO ESCUCHO LA PALABRA NARCOTRÁFICO PIENSO EN…</b><br><br>
+		<br><input type="radio" name="palabra" value=" Drogas, robos, secuestros, violencia, corrupción, abuso de poder, etc…">
+		Drogas, robos, secuestros, violencia, corrupción, abuso de poder, etc…<br>
+		<br><input type="radio" name="palabra" value="Lujos, poder, actividad económica, riquezas etc…">
+		Lujos, poder, actividad económica, riquezas etc…<br>
+		<br><input type="radio" name="palabra" value=" Oportunidades, Dinero, violencia, prestigio, corrupción, armas, carros lujosos etc… ">
+        Oportunidades, Dinero, violencia, prestigio, corrupción, armas, carros lujosos etc… <br>
+        <br>
+    <br>
+
+		<b>6.-SIMONA VILLALBA, DE 37 AÑOS DICE: “PARA MI ES LO MÁXIMO EL CHAPO”
+			TÚ PIENSAS QUE…</b><br><br>
+		<br><input type="radio" name="pensar" value=" El comentario de ella concuerda con mi opinión el Chapo es lo máximo un gran hombre">
+		El comentario de ella concuerda con mi opinión el Chapo es lo máximo un gran hombre<br>
+		<br><input type="radio" name="pensar" value="Los comentarios como el de ella no tiene lógica porque apoyan a un narcotraficante y criminal.">
+		Los comentarios como el de ella no tiene lógica porque apoyan a un narcotraficante y criminal.<br>
+		<br><input type="radio" name="pensar" value="Su comentario es algo exagerado aunque pienso que el Chapo es un buen hombre porque ayudo a muchas personas.">
+        Su comentario es algo exagerado aunque pienso que el Chapo es un buen hombre porque ayudo a muchas personas. <br>
+        <br>
+    <br>
+
+		<b>7.-PARA SALIR DE LA POBREZA YO…</b><br><br>
+		<br><input type="radio" name="pobreza" value="Me pondría a trabajar mucho para conseguir los recursos y poco a poco crecer económica y laboralmente. ">
+		Me pondría a trabajar mucho para conseguir los recursos y poco a poco crecer económica y laboralmente. <br>
+		<br><input type="radio" name="pobreza" value="Haría lo que hiciera falta con tal de conseguir los recursos económicos lo más pronto posible">
+		Haría lo que hiciera falta con tal de conseguir los recursos económicos lo más pronto posible<br>
+		<br><input type="radio" name="pobreza" value="Estudiaría para conseguir un buen trabajo y ahorraría el dinero que ganara para poco a poco salir adelante. ">
+        Estudiaría para conseguir un buen trabajo y ahorraría el dinero que ganara para poco a poco salir adelante.  <br>
+        <br>
+    <br>
+
+		<b>8.- LOS NARCO CORRIDOS…</b><br><br>
+		<br><input type="radio" name="corridos" value="Me gustan un poco pero no los entiendo">
+		Me gustan un poco pero no los entiendo<br>
+		<br><input type="radio" name="corridos" value="No me gustan los relaciono con gente mala ">
+		No me gustan los relaciono con gente mala <br>
+		<br><input type="radio" name="corridos" value="Me encantan y me inspira la letra">
+        Me encantan y me inspira la letra<br>
+        <br>
+    <br>
+
+		<b>9.-¿CONSIDERAS EL NARCOTRÁFICO COMO UNA ACTIVIDAD ECONÓMICA Y CULTURAL?</b><br><br>
+		<br><input type="radio" name="cultura" value="Lo es pero de carácter delictivo, ilegal y sin ética">
+		Lo es pero de carácter delictivo, ilegal y sin ética<br>
+		<br><input type="radio" name="cultura" value="No, porque es algo ilegal ">
+		No, porque es algo ilegal <br>
+		<br><input type="radio" name="cultura" value=" Si lo es y debería fomentarse a más personas">
+        Si lo es y debería fomentarse a más personas<br>
+        <br>
+    <br>
+
+		<b>10.-LA SEGURIDAD EN MI PAÍS ES...</b><br><br>
+		<br><input type="radio" name="seguridad" value="Muy buena aunque la delincuencia no deja de existir por lo que es necesario tomar precauciones ">
+		Muy buena aunque la delincuencia no deja de existir por lo que es necesario tomar precauciones <br>
+		<br><input type="radio" name="seguridad" value="No hay seguridad por eso hay que buscar quien te proteja y te saque de problemas">
+		No hay seguridad por eso hay que buscar quien te proteja y te saque de problemas<br>
+		<br><input type="radio" name="seguridad" value="Buena, aunque el gobierno debería invertir más en esto porque la delincuencia va en aumento">
+        Buena, aunque el gobierno debería invertir más en esto porque la delincuencia va en aumento<br>
+        <br>
+    <br>
+
+		<b>11.-LA LEGALIZACIÓN DE DROGAS…</b><br><br>
+		<br><input type="radio" name="legal" value="No pienso que sea la solución para detener las adicciones, al contrario aumentarían porque las personas tendrían la libertad de comprarlas al igual que el alcohol y los cigarros">
+		No pienso que sea la solución para detener las adicciones, al contrario aumentarían porque las personas tendrían la libertad de comprarlas al igual que el alcohol y los cigarros<br>
+		<br><input type="radio" name="legal" value="Es una excelente idea pues así desaparece el narcotráfico, el delito y la corrupción ">
+		Es una excelente idea pues así desaparece el narcotráfico, el delito y la corrupción <br>
+		<br><input type="radio" name="legal" value="Acabaría con parte de la delincuencia y dependería de cada individuo el consumirlas o no ">
+        Acabaría con parte de la delincuencia y dependería de cada individuo el consumirlas o no <br>
+        <br>
+    <br>
+
+		<b>12.-¿CREES QUE EN MÉXICO HAY UN PROBLEMA CON EL NARCOTRÁFICO Y EL CRIMEN ORGANIZADO?</b><br><br>
+		<br><input type="radio" name="pais" value=" Para nada, todo es invento de la gente, los medios de comunicación y el gobierno">
+		Para nada, todo es invento de la gente, los medios de comunicación y el gobierno<br>
+		<br><input type="radio" name="pais" value="No es un problema en general para todos solo para quienes se relacionan con eso">
+		No es un problema en general para todos solo para quienes se relacionan con eso<br>
+		<br><input type="radio" name="pais" value=" Si, es un problema de hace mucho tiempo  y afecta incluso a personas inocentes  ">
+		Si, es un problema de hace mucho tiempo  y afecta incluso a personas inocentes  <br>
+        <br>
+    <br>
+
+		<b>13.-ROBOS, SECUESTROS, BALACERAS… </b><br><br>
+		<br><input type="radio" name="bala" value=" Me da miedo que eso me pueda pasar a mí o a mi familia">
+		Me da miedo que eso me pueda pasar a mí o a mi familia<br>
+		<br><input type="radio" name="bala" value="Son algo cotidiano no hay porque asustarse el que nada debe nada teme">
+		Son algo cotidiano no hay porque asustarse el que nada debe nada teme<br>
+		<br><input type="radio" name="bala" value="No me dan miedo me se defender ">
+        No me dan miedo me se defender y tengo quien me cuide <br>
+        <br>
+	<br>
+	<b>14.SI UN FAMILIAR FUERA NARCOTRAFICANTE YO…</b><br><br>
+		<br><input type="radio" name="familia" value="Lo apoyaría así me protege y hasta me da algo de trabajo ">
+		Lo apoyaría así me protege y hasta me da algo de trabajo  <br>
+		<br><input type="radio" name="familia" value="No me metería en su vida para no tener problemas">
+		No me metería en su vida para no tener problemas<br>
+		<br><input type="radio" name="familia" value=" Me sentiría inseguro y con miedo y mejor evitaría su compañía ">
+        Me sentiría inseguro y con miedo y mejor evitaría su compañía <br>
+        <br>
+    <br>
+	<b>15.-HAZ PRESENCIADO UN ACTO DE VIOLENCIA (ROBO, SECUESTRO, BALACERA, ETC…)</b><br><br>
+		<br><input type="radio" name="ver" value="No, pero me entero de muchos por las noticias y el periódico ">
+		No, pero me entero de muchos por las noticias y el periódico <br>
+		<br><input type="radio" name="ver" value="Si y es lo peor que me ha pasado ">
+		Si y es lo peor que me ha pasado <br>
+		<br><input type="radio" name="ver" value=" No y espero nunca me toque ver ni vivir algo así">
+        No y espero nunca me toque ver ni vivir algo así  <br>
+        <br>
+    <br>
+		<input type="button" name="btn" value="validar" onclick="validarRadio();">
+	</form>
+      
+    </div>
+    <div class="card">
+      <h2>RESULTADOS</h2>
+     
+	<p id="parrafo1"></p>
+	<p id="parrafo2"></p>
+	<p id="parrafo3"></p>
+	<p id="parrafo4"></p>
+	<p id="parrafo5"></p>
+	<p id="parrafo6"></p>
+	<p id="parrafo7"></p>
+	<p id="parrafo8"></p>
+	<p id="parrafo9"></p>
+	<p id="parrafo10"></p>
+	<p id="parrafo11"></p>
+	<p id="parrafo12"></p>
+	<p id="parrafo13"></p>
+	<p id="parrafo14"></p>
+	<p id="parrafo15"></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+
+<!--EMPIEZA EL SCRIPT-->
+
+<script type="text/javascript">
+function validarRadio(){
+    var s="no";
+for(var i=0;i<document.f1.dinero.length;i++)
+{
+    if(document.f1.dinero[i].checked){
+        document.getElementById("parrafo1").innerHTML = "Eligio la opcion:"+ "<br>" +document.f1.dinero[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+validarRadio2();
+}
+function validarRadio2(){
+    var s="no";
+for(var i=0;i<document.f1.poder.length;i++)
+{
+    if(document.f1.poder[i].checked){
+        document.getElementById("parrafo2").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.poder[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+
+validarRadio3();
+}
+function validarRadio3(){
+    var s="no";
+for(var i=0;i<document.f1.series.length;i++)
+{
+    if(document.f1.series[i].checked){
+        document.getElementById("parrafo3").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.series[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+
+validarRadio4();
+}
+function validarRadio4(){
+    var s="no";
+for(var i=0;i<document.f1.droga.length;i++)
+{
+    if(document.f1.droga[i].checked){
+        document.getElementById("parrafo4").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.droga[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+validarRadio5();
+}
+function validarRadio5(){
+    var s="no";
+for(var i=0;i<document.f1.palabra.length;i++)
+{
+    if(document.f1.palabra[i].checked){
+        document.getElementById("parrafo5").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.palabra[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+validarRadio6();
+}
+function validarRadio6(){
+    var s="no";
+for(var i=0;i<document.f1.pensar.length;i++)
+{
+    if(document.f1.pensar[i].checked){
+        document.getElementById("parrafo6").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.pensar[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+validarRadio7();
+}
+function validarRadio7(){
+    var s="no";
+for(var i=0;i<document.f1.pobreza.length;i++)
+{
+    if(document.f1.pobreza[i].checked){
+        document.getElementById("parrafo7").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.pobreza[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+validarRadio8();
+}
+function validarRadio8(){
+    var s="no";
+for(var i=0;i<document.f1.corridos.length;i++)
+{
+    if(document.f1.corridos[i].checked){
+        document.getElementById("parrafo8").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.corridos[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+validarRadio9();
+}
+function validarRadio9(){
+    var s="no";
+for(var i=0;i<document.f1.cultura.length;i++)
+{
+    if(document.f1.cultura[i].checked){
+        document.getElementById("parrafo9").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.cultura[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+validarRadio10();
+}
+function validarRadio10(){
+    var s="no";
+for(var i=0;i<document.f1.seguridad.length;i++)
+{
+    if(document.f1.seguridad[i].checked){
+        document.getElementById("parrafo10").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.seguridad[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+validarRadio11();
+}
+function validarRadio11(){
+    var s="no";
+for(var i=0;i<document.f1.legal.length;i++)
+{
+    if(document.f1.legal[i].checked){
+        document.getElementById("parrafo11").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.legal[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+validarRadio12();
+}
+function validarRadio12(){
+    var s="no";
+for(var i=0;i<document.f1.pais.length;i++)
+{
+    if(document.f1.pais[i].checked){
+        document.getElementById("parrafo12").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.pais[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+validarRadio13();
+}
+function validarRadio13(){
+    var s="no";
+for(var i=0;i<document.f1.bala.length;i++)
+{
+    if(document.f1.bala[i].checked){
+        document.getElementById("parrafo13").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.bala[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+validarRadio14();
+}
+function validarRadio14(){
+    var s="no";
+for(var i=0;i<document.f1.familia.length;i++)
+{
+    if(document.f1.familia[i].checked){
+        document.getElementById("parrafo14").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.familia[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+
+validarRadio15();
+}
+function validarRadio15(){
+    var s="no";
+for(var i=0;i<document.f1.ver.length;i++)
+{
+    if(document.f1.ver[i].checked){
+        document.getElementById("parrafo15").innerHTML = "Eligio la opcion:"+ "<br>" + document.f1.ver[i].value;
+        s="si";
+    }
+}
+if(s=="no"){
+    alert("Debe seleccionar una opcion");
+}
+}
+</script>
+<script src="quiz.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
